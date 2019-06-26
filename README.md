@@ -35,7 +35,7 @@ Change to the arco-plasma directory and run the scripts in numerical order.
 
 `cd arco-plasma`
 
-`sh 000-use-all-cores-makepkg-conf-v3.sh`
+`sh 000-use-all-cores-makepkg-conf-v3.sh` and so on until complete.
 
 #### Action 6 : Reboot and enjoy!
 You should now have a fully installed version of KDE Plasma.
