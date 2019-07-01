@@ -56,6 +56,14 @@ esac
 
 ##################################################################################################################
 #
+#   Remove Arcolinux stuff
+#
+##################################################################################################################
+
+sudo pacman -R --noconfirm arcolinux-wallpapers-git arcolinux-arc-themes-nico-git arcolinux-neofetch-git arcolinux-system-config-git
+
+##################################################################################################################
+#
 #   Display Manager and Desktop
 #
 ##################################################################################################################
@@ -175,6 +183,7 @@ echo "Installing category Accessories"
 echo "Installing category Development"
 
 sudo pacman -S --noconfirm --needed code
+sudo pacman -S --noconfirm --needed kate
 #sudo pacman -S --noconfirm --needed
 
 echo "Installing category Education"
@@ -189,17 +198,23 @@ echo "Installing category Graphics"
 
 sudo pacman -S --noconfirm --needed gimp
 sudo pacman -S --noconfirm --needed inkscape
+sudo pacman -S --noconfirm --needed flameshot
+sudo pacman -S --noconfirm --needed okular
 
 echo "Installing category Internet"
 
 sudo pacman -S --noconfirm --needed chromium
 sudo pacman -S --noconfirm --needed filezilla
 sudo pacman -S --noconfirm --needed firefox
+sudo pacman -S --noconfirm --needed ktorrent
+sudo pacman -S --noconfirm --needed telegram-desktop
 
 echo "Installing category Multimedia"
 
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed vlc
+sudo pacman -S --noconfirm --needed audacity
+sudo pacman -S --noconfirm --needed obs-studio
 #sudo pacman -S --noconfirm --needed
 
 echo "Installing category Office"
@@ -207,8 +222,15 @@ echo "Installing category Office"
 sudo pacman -S --noconfirm --needed libreoffice-fresh
 #sudo pacman -S --noconfirm --needed
 
+echo "Installing category Utilities"
+
+sudo pacman -S --noconfirm --needed kcalc
+sudo pacman -S --noconfirm --needed yakuake
+#sudo pacman -S --noconfirm --needed
+
 echo "Installing category Other"
 
+sudo pacman -S --noconfirm --needed flatpak
 #sudo pacman -S --noconfirm --needed
 
 echo "Installing category System"
@@ -235,7 +257,10 @@ sudo pacman -S --noconfirm --needed imagemagick
 sudo pacman -S --noconfirm --needed kde-gtk-config
 sudo pacman -S --noconfirm --needed libappindicator-gtk3
 sudo pacman -S --noconfirm --needed w3m
+# File compression tools
 sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  arj cabextract file-roller
+# Package support for Discover
+sudo pacman -S --noconfirm --needed packagekit-qt5
 
 ##################################################################################################################
 #
