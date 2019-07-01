@@ -25,14 +25,16 @@ sudo pacman -R xcursor-breeze --noconfirm
 
 sudo pacman -Syyu --noconfirm
 #installing displaymanager or login manager
-sudo pacman -S --noconfirm --needed lightdm
-sudo pacman -S --noconfirm --needed arcolinux-lightdm-gtk-greeter-plasma arcolinux-lightdm-gtk-greeter-settings
-sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
+# sudo pacman -S --noconfirm --needed lightdm
+sudo pacman -S --noconfirm --needed sddm sddm sddm-kcm
+# sudo pacman -S --noconfirm --needed arcolinux-lightdm-gtk-greeter-plasma arcolinux-lightdm-gtk-greeter-settings
+# sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
 sudo pacman -S --noconfirm --needed dolphin konsole
 #installing desktop environment
 sudo pacman -S plasma --noconfirm --needed
 #enabling displaymanager or login manager
-sudo systemctl enable lightdm.service -f
+# sudo systemctl enable lightdm.service -f
+sudo systemctl enable sddm.service -f
 sudo systemctl set-default graphical.target
 
 
