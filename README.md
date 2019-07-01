@@ -1,5 +1,7 @@
 # ArcoLinuxD Plasma desktop
 
+Install script based on the arco-plasma scripts provided by the ArcoLinux project. This version removes most of the Arco-specific things like themes and other desktop settings in order to have a vanilla KDE Plasma desktop.
+
 ### Steps to install
 - Install using the latest ArcolinxD ISO - https://arcolinux.info/download
 - Follow the steps below.
