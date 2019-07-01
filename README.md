@@ -31,11 +31,11 @@ Clone this git repoisitory
 `git clone https://github.com/esa1975/arco-plasma`
 
 #### Action 5 : Run install scripts
-Change to the arco-plasma directory and run the scripts in numerical order.
+Change to the arco-plasma directory and run the install script.
 
 `cd arco-plasma`
 
-`sh 000-use-all-cores-makepkg-conf-v3.sh` and so on until complete.
+`sh install-all.sh`
 
 #### Action 6 : Reboot and enjoy!
 You should now have a fully installed version of KDE Plasma.
